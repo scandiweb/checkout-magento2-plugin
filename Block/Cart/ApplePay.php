@@ -35,9 +35,9 @@ use Magento\Framework\View\Element\Template\Context;
 
 class ApplePay extends Onepage
 {
-    private Cart $cart;
-    private ConfigProvider $checkoutComConfigProvider;
-    private SerializerInterface $serializer;
+    private $cart;
+    private $checkoutComConfigProvider;
+    private $serializer;
 
     public function __construct(
         Cart $cart,

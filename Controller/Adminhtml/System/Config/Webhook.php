@@ -111,6 +111,8 @@ class Webhook extends Action
      */
     public function execute()
     {
+        $success = false;
+
         try {
             // Prepare some parameters
             $message = '';

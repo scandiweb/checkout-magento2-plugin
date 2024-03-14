@@ -119,7 +119,7 @@ class ApplePayMethod extends AbstractMethod
      * @var bool $_canRefundInvoicePartial
      */
     protected $_canRefundInvoicePartial = true;
-    protected Json $json;
+    protected $json;
     /**
      * $config field
      *

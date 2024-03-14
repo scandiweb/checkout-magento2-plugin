@@ -30,11 +30,11 @@ use Magento\Sales\Api\OrderRepositoryInterface;
 
 class View extends Template
 {
-    private Utilities $utilities;
-    private Http $request;
-    private OrderRepositoryInterface $orderRepository;
-    private ConfigAlternativePayments $configAlternativePayments;
-    private Loader $configLoader;
+    private $utilities;
+    private $request;
+    private $orderRepository;
+    private $configAlternativePayments;
+    private $configLoader;
 
     public function __construct(
         Context $context,
