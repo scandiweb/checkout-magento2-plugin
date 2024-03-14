@@ -223,7 +223,7 @@ class Callback extends Action implements CsrfAwareActionInterface
                                         ->getInfoInstance()
                                         ->setAdditionalInformation(
                                             'cko_payment_information',
-                                            array_intersect_key($response, array_flip(['source'])),
+                                            array_intersect_key($response, array_flip(['source']))
                                         );
 
                                     // Get 3ds information and set it to the order
@@ -232,7 +232,7 @@ class Callback extends Action implements CsrfAwareActionInterface
                                         ->getInfoInstance()
                                         ->setAdditionalInformation(
                                             'cko_threeDs',
-                                            array_intersect_key($response, array_flip(['threeDs'])),
+                                            array_intersect_key($response, array_flip(['threeDs']))
                                         );
 
                                     // Save the order

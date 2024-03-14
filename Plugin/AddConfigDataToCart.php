@@ -10,8 +10,8 @@ use Magento\Checkout\Model\CompositeConfigProvider;
 
 class AddConfigDataToCart
 {
-    private Config $config;
-    private CompositeConfigProvider $compositeConfigProvider;
+    private $config;
+    private $compositeConfigProvider;
 
     public function __construct(
         Config $config,
